@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Food Menu, Meal Plan, Weekly meal">
+    <title>Food Menu</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        th{
+            border-spacing: 500px;
+        }
+
+        td{
+            border: solid black 2px;
+            text-align: center; 
+            padding: 3px;
+        }
+        
+        .verticalstyle{
+            text-align: left ;
+            writing-mode: vertical-lr;
+            text-align: center;
+            transform: rotate(180deg);
+            height: 100px;
+            border-radius: 10px;
+            background-color: rgb(212, 204, 204);
+            
+            
+        }
+        .verticalstyle1{
+            text-align: left ;
+            writing-mode: vertical-lr;
+            text-align: center;
+            transform: rotate(180deg);
+            height: 50px;
+            /* width: 80px; */
+        }
+        .green{
+           background-color: rgb(176, 202, 176);
+           border-radius: 50px;
+        }
+        .purple{
+            background-color: rgb(133, 86, 133);
+            border-radius: 50px;
+        }
+        /* td:nth-child(even) {
+            background-color: #f2f2f2;
+
+        } */
+        
+
+
+    </style>
+
+</head>
+<body>
+    <marquee behavior="alternate" direction="right"><h1 id="top"> WEEKLY MEAL PLAN</h1>
+    </marquee>
+     
+    <table style="width:100px;" >
+        
+
+        <tr> 
+            <th> </th>
+            <th class="purple"><b>Sunday</b> </th>
+            <th class="green"><b>Monday</b> </th>
+            <th class="purple"><b>Tuesday </td>
+            <th class="green"><b>Wednesday</b> </th>
+            <th class="purple"><b>Thursday</b> </th>
+            <th class="green"><b>Friday</b> </th>
+            <th class="purple"><b>Saturday</b> </th>
+        </tr>
+
+        <tr>
+            <th class="verticalstyle green"><b>Breakfast</b></th>
+            <td colspan="2"><figure> <img src="bread.jfif" alt="bread and tea" width="80px"> <figcaption> Bread and Tea</figcaption></figure> </td>
+            <td><figure> <img src="spa.jpg" alt="Spaghetti" width="100px" height="70px">
+            </figure> Spaghetti & Stew</td>
+            <td>Pap & akara</td>
+           
+            <td>Boiled potatoes </td>
+            <td><figure><img src="noodles.jpg" alt="noodles and egg" width="100px"> <figcaption>Noodles, Vegetables and egg</figcaption></figure></td> 
+            <td>Moi moi & Pap</td>
+        </tr>
+
+        <tr>
+            <th class="verticalstyle purple"> <b>Lunch</b> </th>
+            <td><figure> <img src="friedrice.jpg" alt="fried rice" width="100px"> <figcaption>Fried rice and Vegetable Salad</figcaption>
+            </figure> </td>
+            <td style="text-align: left;"> <ul>
+                <li>Eba and Ogbono soup
+                </li>
+                <li>Eba and Okra soup</li>
+            </ul></td>
+            <td>Pounded yam and oha soup</td>
+            <td><figure><img src="ofa.jfif" alt="Ofada rice" width="100px"></figure> Ofada rice, egg and tomato stew</td>
+            <td>Beans and corn porridge</td>
+            <td  class="verticalstyle1" rowspan="2">Thank God it is Friday
+            </td>
+            <td>Semovita and egusi</td>
+        </tr>
+
+        <tr>
+            <th class="verticalstyle green"><b>Dinner</b></th>
+            <td>Beans and pepper sauce</td>
+            <td><figure> <img src="beans.JPG" alt="beans and yam" width="80px"> <figcaption> Porridge beans and yam</figcaption></figure></td>
+            <td style="text-align: left;"><ul>
+                <li>Crispy fried chicken with chips
+                </li>
+                <li>Sweet corn </li>
+                <li>boiled corn cob</li>
+            </ul></td>
+            <td>Catfish pepper soup</td>
+            <td><figure> <img src="isi ewu.jpg" alt="Isi ewu" width="100px"> <figcaption>Isi ewu</figcaption></figure> </td>
+            
+            <td><figure> <img src="yam.jfif" alt="Yam and Egg sauce" width="100px" height="100px"> <figcaption></figcaption>Yam and Egg sauce</figure></td>
+        </tr>
+    </table>
+    <p><a href="#top"><img src="up.jfif" alt="up arrow icon" width="35px"></a></p>
+</body>
+</html>
