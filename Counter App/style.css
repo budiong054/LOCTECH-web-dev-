@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    height: 300px;
+}
+.inner-container{
+    background-color: rgb(38, 38, 250);
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.displayNumber{
+    
+    margin-top: 20px;
+    border-bottom: 1.5px solid #ffffff;
+    text-align: center;
+    font-size: 27px;
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+button{
+    padding: 5px 15px 5px 10px;
+    font-size: 17px;
+    border-radius: 2px;
+}
+
+.addBtn{
+    background-color: rgb(4, 138, 4);
+    color: #ffffff;
+    border: rgb(4, 138, 4) solid;
+}
+
+.resetBtn{
+    background-color: #ffffff;
+    border: #ffffff solid;
+}
+
+.subBtn{
+    background-color: rgb(240, 71, 71);
+    color: #ffffff;
+    border: rgb(240, 71, 71) solid;
+}
+@media (max-width:768px){
+    .container{
+        width: 100%;
+    }
+
+    .displayNumber{
+        width: 100%;
+    }
+
+    .buttons{
+        width: 100%;
+    }
+}
+@media (max-width: 425px){
+    .inner-container{
+        width: 80%;
+    }
+}
