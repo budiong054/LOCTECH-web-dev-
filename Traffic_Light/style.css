@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: baseline; */
+}
+
+.light{
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 15px;
+    width: 90px;
+}
+
+.light div{
+    border: transparent 2px solid;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 7px auto;
+}
+
+.modal-pop-up{
+    position: absolute;
+    /* top: ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 200px;
+    font-weight: 400;
+    align-self: center;
+    font-size: 5rem; /* 48px */
+    line-height: 1.5rem;
+    color: red;
+    font-family: 'Lobster', cursive;
+}
+
+.opacity-red,.opacity,.opacity-green{
+    opacity: 1;
+}
+.no-opacity-red,.no-opacity,.no-opacity-green{
+    opacity: 0.1;
+}
+
+.red{
+    background-color: red;
+}   
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: rgb(12, 223, 12);
+}
+
+.count-down{
+    width: 80px;
+    height: 80px;
+    border: transparent 2px solid;
+    color: red;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+/* .road{
+    display: flex;
+} */
+
+.car-container{
+    position: relative;
+    transform: rotateY(180deg);
+    top: 200px;
+    right: 19%;
+    
+}
+
+.car-top-wrap{
+    display: flex;
+    gap: 7px;
+    position: absolute;
+    top: 16px;
+    left: 82px;   
+
+}
+
+.car-top{
+    border-top: 2px solid black;
+    width: 40px;
+    height: 30px;
+    padding: 20px;
+}
+
+.car-top-right{
+    border-bottom: 2px solid black;
+    width: 48px;
+    margin-top: -17.5px;
+    height: 30px;
+    padding: 20px;
+    transform: rotate(45deg);
+}
+
+.car-top-left{
+    border-bottom: 2px solid black;
+    width: 49.5px;
+    margin-top: -17.35px;
+    margin-right: -1px;
+    height: 30px;
+    padding: 20px;
+    transform: rotate(-45deg);
+}
+
+.car-bottom-wrap{
+    display: flex;
+    padding: 50px;
+    gap: 10px;
+}
+
+.bottom-left{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    width: 46.5px;
+    height: 35px;
+    padding: 20px;
+}
+
+.bottom-right{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    width: 40px;
+    height: 35px;
+    padding: 20px;
+}
+.bottom-middle{
+    border-bottom: 2px solid black;
+    width: 40px;
+    height: 30px;
+    padding: 20px;
+}
+.bottom-tyre{
+    border: 2px solid black;
+    border-radius: 50%;
+    align-self: end;
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    margin-bottom: -10px;
+}
+
+.car-moving{
+    animation-name: carmove;
+    animation-duration: 7.225s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carmove {
+    0%{
+        right: 20%;
+    }
+    25%{
+        right: 40%;
+    }
+    50%{
+        right: 60%;
+    }
+    75%{
+        right: 80%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+@media (max-width:650px){
+    .container{
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .modal-pop-up{
+        font-size: 2.5rem;
+        left: 40%;
+    }
+
+    .car-top-wrap{
+        gap: 4px;
+        position: absolute;
+        top: 35px;
+        left: 70px;   
+    
+    }
+
+    .car-top{
+        width: 27.5px;
+        height: 10px;
+        padding: 10px;
+    }
+    
+    .car-top-right{
+        width: 30px;
+        margin-top: -11px;
+        height: 10px;
+        padding: 10px;
+        transform: rotate(30deg);
+    }
+    
+    .car-top-left{
+        margin-top: -11px;
+        width: 30px;
+        height: 10px;
+        padding: 10px;
+        transform: rotate(-30deg);
+    }
+    
+    .bottom-left{
+        width: 20px;
+        height: 10px;
+        padding: 10px;
+    }
+    
+    .bottom-right{
+        width: 20px;
+        height: 10px;
+        padding: 10px;
+    }
+    .bottom-middle{
+        width: 10px;
+        height: 10px;
+        padding: 10px;
+    }
+    .bottom-tyre{
+        border-radius: 50%;
+        align-self: end;
+        width: 15px;
+        height: 15px;
+        background-color: gray;
+        margin-bottom: -7px;
+    }
+
+    .car-container{
+        right: 4%;
+    }
+    
+    @keyframes carmove {
+        0%{
+            right: 5%;
+        }
+        25%{
+            right: 30%;
+        }
+        50%{
+            right: 55%;
+        }
+        75%{
+            right: 75%;
+        }
+        100%{
+            right: 100%;
+        }
+    }
+
+    
+    .light{
+        background-color: rgba(0, 0, 0, 0.65);
+        padding: 15px;
+        width: 70px;
+    }
+
+    .light div{
+        border: transparent 2px solid;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        margin: 7px auto;
+    }
+
+    .count-down{
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
