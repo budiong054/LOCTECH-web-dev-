@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="container-all">
+        <div class="container">
+            <form name="loandata" action="loan-home.html">
+               <div class="row" id="row1">
+                   <div class="col-25a">
+                       <h1><i>Loan Calculator</i></h1>
+                   </div>
+               </div> 
+              <div class="row">
+                <div class="col-25">
+                  <label for="amount"><b>Amount of the loan:</b></label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="principal" name="principal" placeholder="Enter amount">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="intRate"><b>Annual percentage rate of interest:</b></label>
+                </div>
+                <div class="col-75">
+                  <input type="text" placeholder="Interest Rate" name="interest" id="interest">
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="duration"><b>Repayment period in years:</b></label>
+                </div>
+                <div class="col-75">
+                  <input type="text" placeholder="For how long?" name="years" id="years">
+                </div>
+              </div>
+
+              <div class="row">
+                <button type="button" class="btn">Compute</button>
+                <!-- <input type="button" class="btn" value="Compute" onclick="calculate"> -->
+              </div>
+
+              <div class="row" id="row1">
+                <div class="col-25b">
+                  <h2><i>Payment Information</i></h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="amount"><b>Your monthly payment will be:</b></label>
+                </div>
+                <div class="col-75 output" id="monthly-payment">N 0.00
+                  <!-- <input type="text" id="payment" name="payment" placeholder="payment"> -->
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="amount"><b>Your total payment will be:</b></label>
+                </div>
+                <div class="col-75 output" id="total-payment">N 0.00
+                  <!-- <input type="text" id="total" name="total" placeholder="total"> -->
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="amount"><b>Your total interest payments will be:</b></label>
+                </div>
+                <div class="col-75 output" id="total-interest">
+                    N 0.00
+                  <!-- <input type="text" id="total" name="totalinterest" placeholder="total interest"> -->
+                </div>
+              </div>
+            </form>
+          </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

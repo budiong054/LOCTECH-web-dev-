@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Style the container holding the container and the form */
+.container-all {
+    background-color: #222;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  /* Style the container holding the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* /Style the form/ */
+  form{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  /* Style inputs, select elements and textareas */
+    input[type=text], input[type=password], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    outline: none;
+  }
+
+  /* Style the label to display next to the inputs */
+    label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  /* Style the submit button */
+    /* input[type=button] {
+    background: #0080ff;
+    border: 1px royalblue solid;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  } */
+
+  .btn{
+    background: #0080ff;
+    border: 1px royalblue solid;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin-top: 10px;
+  }
+
+  /* Floating column for labels: 25% width */
+    .col-25 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  /* Floating column for labels: 25% width */
+  .col-25a {
+    /* background-color: #04AA6D; */
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    font-family: 'Lora', serif;
+    text-align: center;
+  }
+
+   /* Floating column for labels: 25% width */
+   .col-25b {
+    /* background-color: #04AA6D; */
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    font-family: 'Lora', serif;
+    text-align: center;
+  }
+
+  /* Floating column for inputs: 75% width */
+    .col-75 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .output{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    background-color: white;
+    padding: 12px;
+    
+  }
+
+  /* Floating column for inputs: 75% width */
+  .col-75a {
+    /* background-color: #04AA6D; */
+    float: left;
+    width: 70%;
+    height: 76px;
+    padding-top: 4px;
+    margin-top: 6px;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Lora";
+  }
+
+  /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+  .col-25a, .col-75a, .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    }
+  .col-75a{
+    background: #1e8dfd;
+    border: 1px royalblue solid;
+    color: white;
+    font-family: "Lora";
+    text-align: center;
+    resize: vertical;
+    border-radius: 10px;
+  }
+  .col-25a{
+    background-color: transparent;
+    color: #0080ff;
+    font-family: "Lora";
+    text-align: center;
+  }
+  /* #row1{
+    background: #0080ff;
+    border: 1px royalblue solid; 
+    resize: vertical;
+    border-radius: 10px;
+  } */
+  .container-all{
+    height: 100vh;
+  }
+  .container{
+    width: 80%;
+  }
+  }
