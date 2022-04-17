@@ -4,86 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Poppins:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&family=Poppins:wght@400;500&family=Akshar:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b17c51519.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
 <body>
-    <div class="container-all">
-        <div class="container">
-            <form name="loandata" action="loan-home.html">
-               <div class="row" id="row1">
-                   <div class="col-25a">
-                       <h1><i>Loan Calculator</i></h1>
-                   </div>
-               </div> 
-              <div class="row">
-                <div class="col-25">
-                  <label for="amount"><b>Amount of the loan:</b></label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="principal" name="principal" placeholder="Enter amount">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="intRate"><b>Annual percentage rate of interest:</b></label>
-                </div>
-                <div class="col-75">
-                  <input type="text" placeholder="Interest Rate" name="interest" id="interest">
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-25">
-                  <label for="duration"><b>Repayment period in years:</b></label>
-                </div>
-                <div class="col-75">
-                  <input type="text" placeholder="For how long?" name="years" id="years">
-                </div>
-              </div>
+    <div class="bg-primary h-auto flex justify-center md:items-center">
+        <div class="bg-form w-full md:w-1/2">
+            <div class="flex gap-2 items-center p-3 mt-5">
+                <h1>Loan Calculator</h1> <i class="fa-solid fa-coins border-4 border-blue-600 rounded-full p-1.5 text-xl"></i>
+            </div>
 
-              <div class="row">
-                <button type="button" class="btn">Compute</button>
-                <!-- <input type="button" class="btn" value="Compute" onclick="calculate"> -->
-              </div>
+            <div class=" p-3">
+                <h2>Amount of the loan:</h2>
+                <input type="text" placeholder="Enter amount" class="input input-blue output" id="principal">
+                <h2>Annual percentage rate:</h2>
+                <input type="text" placeholder="Interest Rate" class="input input-blue output" id="interest">
+                <h2>Period in years:</h2>
+                <input type="text" placeholder="For how long?" class="input input-blue output" id="years">
+                <button type="button" class="btn bg-blue-600 px-3 rounded md:w-28 h-12 text-white md:text-xl font-medium">Compute</button>
+            </div>
 
-              <div class="row" id="row1">
-                <div class="col-25b">
-                  <h2><i>Payment Information</i></h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="amount"><b>Your monthly payment will be:</b></label>
-                </div>
-                <div class="col-75 output" id="monthly-payment">N 0.00
-                  <!-- <input type="text" id="payment" name="payment" placeholder="payment"> -->
-                </div>
-              </div>
+            <div class="mt-2 p-3">
+                <h1 class="border-y-1 border-blue-600 py-1.5">Payment Information</h1>
+            </div>
 
-              <div class="row">
-                <div class="col-25">
-                  <label for="amount"><b>Your total payment will be:</b></label>
-                </div>
-                <div class="col-75 output" id="total-payment">N 0.00
-                  <!-- <input type="text" id="total" name="total" placeholder="total"> -->
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-25">
-                  <label for="amount"><b>Your total interest payments will be:</b></label>
-                </div>
-                <div class="col-75 output" id="total-interest">
-                    N 0.00
-                  <!-- <input type="text" id="total" name="totalinterest" placeholder="total interest"> -->
-                </div>
-              </div>
-            </form>
-          </div>
+            <div class="p-3">
+                <h2>Your monthly payment will be:</h2>
+                <div class="input output flex items-center bg-white" id="monthly-payment">N 0.00</div>
+                <h2>Your monthly payment will be:</h2>
+                <div class="input output flex items-center bg-white" id="total-payment">N 0.00</div>
+                <h2>Your monthly payment will be:</h2>
+                <div class="input output flex items-center bg-white" id="total-interest">N 0.00</div>
+            </div>
+            
+        </div>
+        
     </div>
 
     <script src="index.js"></script>
-
 </body>
 </html>
